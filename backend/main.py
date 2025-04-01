@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from database import SessionLocal, engine, Base
 from schemas import TodoCreate, TodoUpdate, TodoResponse
 from crud import get_todos, create_todo, delete_todo, update_todo
-from models import Todo  # Certifique-se de ter a classe `Todo` importada do seu modelo
+from models import Todo # Importando o modelo Todo
 
 app = FastAPI()
 
@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],  # Permite todos os cabeçalhos
 )
 
-# Dependency to get the database session
+# Configuração do banco de dados
 def get_db():
     db = SessionLocal()
     try:

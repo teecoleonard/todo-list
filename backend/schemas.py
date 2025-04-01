@@ -27,8 +27,8 @@ class TodoResponse(TodoBase):
         schema_extra = {
             "example": {
                 "id": 1,
-                "title": "Learn FastAPI",
-                "description": "Learn how to build APIs with FastAPI",
+                "title": "Aprender FastAPI",
+                "description": "Aprender mas sobre FastAPI e SQLAlchemy",
                 "created_at": "2023-10-01 12:00:00",
                 "updated_at": "2023-10-01 12:00:00",
                 "completed": False,
