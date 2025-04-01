@@ -11,7 +11,6 @@ if (Test-Path ".\frontend") {
     # Copie apenas os arquivos reais, não as referências de submodule
     Get-ChildItem -Path .\frontend -Exclude .git | Copy-Item -Destination "$novoRepoPath\frontend" -Recurse -Force
 }
-
 # Navegue para o novo diretório
 cd $novoRepoPath
 
